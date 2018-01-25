@@ -1,0 +1,34 @@
+--- 
+service: 
+  name: Chlover
+  host: http://api.chlover.io
+  regions:
+    -
+      us-east-1
+    _
+      us-west-1
+  variables:
+    -
+      version: 1
+  headers:
+    -
+      auth: bearer 32234234234242
+  checks:
+    -
+      name: xping
+      url: /v{{version}}/xping
+      method: GET
+      interval: 300
+      timeout: 3
+      rules:
+        -
+          status_code: 200
+    -
+      name: front page
+      url: /v{{version}}/images/latest/1?user=4
+      method: GET
+      interval: 300
+      timeout: 3
+      rules:
+        -
+          status_code: 200
