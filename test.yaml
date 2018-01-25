@@ -5,8 +5,6 @@ service:
   regions:
     -
       us-east-1
-    _
-      us-west-1
   variables:
     -
       version: 1
