@@ -2,6 +2,9 @@
 service: 
   name: Chlover
   host: http://api.chlover.io
+  afsfasf
+  sfd
+  
   regions:
     -
       us-east-2
