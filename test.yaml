@@ -13,7 +13,7 @@ service:
   checks:
     -
       name: xping
-      url: /v{{version}}/xping
+      url: /{{version}}/xping
       method: GET
       interval: 300
       timeout: 3
@@ -22,7 +22,7 @@ service:
           status_code: 200
     -
       name: front page
-      url: /v{{version}}/images/latest/1?user=4
+      url: /{{version}}/images/latest/1?user=4
       method: GET
       interval: 300
       timeout: 3
