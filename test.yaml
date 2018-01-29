@@ -4,15 +4,12 @@ service:
   host: http://api.chlover.io  
   regions:
     -
-      us-east-3
+      us-east-1
     -
-      us-west-3
+      us-west-1
   variables:
     -
-      version: 1
-  headers:
-    -
-      auth: bearer 32234234234242
+      version: v1
   checks:
     -
       name: xping
