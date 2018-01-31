@@ -7,7 +7,7 @@ service:
     - us-west-2
   variables:
     - 
-      version: v1
+      version: v0
   checks:
     -
       name: xping
