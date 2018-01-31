@@ -3,12 +3,10 @@ service:
   name: Chlover
   host: http://api.chlover.io  
   regions:
-    -
-      us-east-2
-    -
-      us-west-1
+    - us-east-2
+    - us-west-1
   variables:
-    -
+    - 
       version: v1
   checks:
     -
