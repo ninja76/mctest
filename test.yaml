@@ -11,16 +11,7 @@ service:
   checks:
     -
       name: xping
-      url: /{{version}}/xping
-      method: GET
-      interval: 300
-      timeout: 3
-      rules:
-        -
-          status_code: 200
-    -
-      name: front page
-      url: /{{version}}/images/latest/1?user=4
+      url: /ping
       method: GET
       interval: 300
       timeout: 3
